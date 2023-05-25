@@ -440,7 +440,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.light
+    android.hardware.vibrator-service-awinic
 
 # VNDK
 PRODUCT_COPY_FILES += \
