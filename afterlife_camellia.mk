@@ -12,9 +12,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/camellia/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_camellia
+# AfterLife flags
+AFTERLIFE_GAPPS := true
+AFTERLIFE_MAINTAINER := ramshell688
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_BLUR := true
+USE_PIXEL_CHARGING := true
+
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_USES_AOSP_RECOVERY := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
+PRODUCT_NAME := afterlife_camellia
 PRODUCT_DEVICE := camellia
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
